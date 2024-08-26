@@ -10,7 +10,7 @@ export default defineConfig({
         main: path.resolve(__dirname, 'index.html'),
       },
       output: {
-        entryFileNames: '[name].js',
+        entryFileNames: 'index.js',
         chunkFileNames: '[name].js',
         assetFileNames: '[name].[ext]',
       },
