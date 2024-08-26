@@ -7,13 +7,16 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, 'index.html'),
+        index: 'src/index.ts',
+        content: 'src/content.ts',
+        background: 'src/background.ts',
       },
       output: {
-        entryFileNames: 'index.js',
+        entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
         assetFileNames: '[name].[ext]',
       },
     },
+    outDir: 'dist'
   },
 });
