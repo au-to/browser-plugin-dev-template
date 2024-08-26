@@ -1,0 +1,1 @@
+vite+typeScript browser plugin development template.
